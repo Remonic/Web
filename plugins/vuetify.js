@@ -10,7 +10,8 @@ import {
   VGrid,
   VToolbar,
   VTextField,
-  VCheckbox
+  VCheckbox,
+  VDialog
 } from 'vuetify'
 
 Vue.use(Vuetify, {
@@ -28,7 +29,8 @@ Vue.use(Vuetify, {
     VGrid,
     VToolbar,
     VTextField,
-    VCheckbox
+    VCheckbox,
+    VDialog
   },
   iconfont: 'mdi'
 })

@@ -1,5 +1,5 @@
 import axios from 'axios'
-const url = 'http://localhost:8081/'
+const url = 'http://localhost:8080/'
 
 export default class RemonicApi {
   static data (data) {
@@ -12,7 +12,7 @@ export default class RemonicApi {
     )
   }
 
-  static register (name = '', email = '', password = '') {
+  static register (name, email, password) {
     return axios.post(
       '/user/register',
       {

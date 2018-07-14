@@ -1,5 +1,5 @@
 <template>
-  <main-card centered card-class="pa-5">
+  <main-card centered card-class="pa-4">
     <span class="login-title">Login to Remonic</span>
 
     <v-text-field label="Email" class="login-field pt-1"></v-text-field>
