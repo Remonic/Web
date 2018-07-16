@@ -23,4 +23,16 @@ export default class RemonicApi {
       this.data()
     )
   }
+
+  static login (email, password, rememberMe) {
+    return axios.post(
+      '/user/login',
+      {
+        email,
+        password,
+        rememberMe
+      },
+      this.data()
+    )
+  }
 }

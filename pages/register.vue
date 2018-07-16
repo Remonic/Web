@@ -65,8 +65,7 @@ export default {
       RemonicApi.register(this.name, this.email, this.password)
         .then(res => {
           this.loading = false
-
-          // todo save token and proceed
+          this.$router.push('/dashboard')
         })
         .catch(error => {
           this.loading = false
