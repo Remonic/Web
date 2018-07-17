@@ -1,5 +1,5 @@
 import axios from 'axios'
-const url = 'http://localhost:8080/'
+const url = 'http://localhost:8080/api/'
 
 export default class RemonicApi {
   static data (data) {
@@ -31,6 +31,27 @@ export default class RemonicApi {
         email,
         password,
         rememberMe
+      },
+      this.data()
+    )
+  }
+
+  static getSetup () {
+    return axios.get(
+      '/setup',
+      this.data({
+        transformResponse (data) {
+          return data.setup
+        }
+      })
+    )
+  }
+
+  static setup (database) {
+    return axios.post(
+      '/setup',
+      {
+        database
       },
       this.data()
     )

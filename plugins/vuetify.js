@@ -11,7 +11,8 @@ import {
   VToolbar,
   VTextField,
   VCheckbox,
-  VDialog
+  VDialog,
+  VProgressCircular
 } from 'vuetify'
 
 Vue.use(Vuetify, {
@@ -30,7 +31,8 @@ Vue.use(Vuetify, {
     VToolbar,
     VTextField,
     VCheckbox,
-    VDialog
+    VDialog,
+    VProgressCircular
   },
   iconfont: 'mdi'
 })
